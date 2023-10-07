@@ -53,7 +53,7 @@ const TextApp = () => {
         try{
             
             setTittle(tittle);
-            const response = await fetch("http://localhost:5000/startorsavechat", {
+            const response = await fetch("https://aitoolkit-backend.onrender.com/startorsavechat", {
                 method: 'POST',
                 headers: {
                         'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ const TextApp = () => {
         if (!localStorage.getItem("authToken")) {navigate("/login")}
 
         try{
-            const response = await fetch("http://localhost:5000/fetchallchats", {
+            const response = await fetch("https://aitoolkit-backend.onrender.com/fetchallchats", {
                 method: 'POST',
                 headers: {
                         'Content-Type': 'application/json'
@@ -108,7 +108,7 @@ const TextApp = () => {
         if (!localStorage.getItem("authToken")) {navigate("/login")}
 
         try{
-            const response = await fetch("http://localhost:5000/loadchat", {
+            const response = await fetch("https://aitoolkit-backend.onrender.com/loadchat", {
                 method: 'POST',
                 headers: {
                         'Content-Type': 'application/json'
@@ -135,7 +135,7 @@ const TextApp = () => {
         if (!localStorage.getItem("authToken")) {navigate("/login")}
         
         try{
-            const response = await fetch("http://localhost:5000/deletechat", {
+            const response = await fetch("https://aitoolkit-backend.onrender.com/deletechat", {
                 method: 'POST',
                 headers: {
                         'Content-Type': 'application/json'
