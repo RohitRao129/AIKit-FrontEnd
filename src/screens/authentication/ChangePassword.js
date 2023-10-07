@@ -11,7 +11,7 @@ export default function ChangePassword() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch("http://localhost:5000/changepassword", {
+        const response = await fetch("https://aitoolkit-backend.onrender.com/changepassword", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

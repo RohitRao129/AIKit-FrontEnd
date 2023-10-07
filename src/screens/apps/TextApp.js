@@ -26,7 +26,7 @@ const TextApp = () => {
         let query =userInput;
         setUserInput("");
 
-        const response = await fetch("http://localhost:5000/chatrequest", {
+        const response = await fetch("https://aitoolkit-backend.onrender.com/chatrequest", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
